@@ -6,7 +6,7 @@
     using System.Runtime.InteropServices;
     using Microsoft.VisualBasic;
 
-    public class nKeyPress
+    public class NKeyPress
     {
         [DllImport("user32.dll")]
         static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, UIntPtr dwExtraInfo);
@@ -40,8 +40,8 @@
 
         private class HotKeyMessageFilter : IMessageFilter
         {
-            private nKeyPress parent;
-            public HotKeyMessageFilter(nKeyPress parent) { this.parent = parent; }
+            private NKeyPress parent;
+            public HotKeyMessageFilter(NKeyPress parent) { this.parent = parent; }
 
             public bool PreFilterMessage(ref Message m)
             {
@@ -275,7 +275,7 @@
 
         public static void Main(string[] args)
         {
-            nKeyPress kp = new nKeyPress();
+            NKeyPress kp = new NKeyPress();
             kp.StartLoop();
             kp.Run();
         }

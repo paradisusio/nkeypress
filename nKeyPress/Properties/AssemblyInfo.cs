@@ -5,10 +5,10 @@ using System.Runtime.CompilerServices;
 // Change them to the values specific to your project.
 
 [assembly: AssemblyTitle("nKeyPress")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Variable-speed repeated keyboard press.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Paradisus.io")]
-[assembly: AssemblyProduct("")]
+[assembly: AssemblyProduct("nKeyPress")]
 [assembly: AssemblyCopyright("Victor L. Senior")]
 [assembly: AssemblyTrademark("Paradisus.io")]
 [assembly: AssemblyCulture("")]
